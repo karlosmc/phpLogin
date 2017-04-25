@@ -13,6 +13,9 @@ else {
 }
 }
 ?>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<div class="container">
+	<div class="col-md-12">
 <h3>registro de estudiantes</h3>
 <hr>
 <form action="" method="post">
@@ -38,5 +41,7 @@ else {
     <label>Nota 3</label>
     <input type="number" name="nota3" min="1" max="10" required>
     <br><br>    
-    <input type="submit" name="enviar" value="Crear">
+    <input type="submit" name="enviar" value="Crear" class="btn-success">
 </form>
+        </div>
+</div>

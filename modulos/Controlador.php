@@ -1,22 +1,37 @@
 <?php
 include_once("clases/Estudiante.php");
 include_once("clases/Usuario.php");
+include_once("clases/ProductosEn.php");
 
 class controladorEstudiantes {
     //put your code here
     
     private $estudiante;
     private $usuario;
+    private $producto;
     
     public function __construct() {
         $this->estudiante=new Estudiante();
         $this->usuario=new Usuario();
+        $this->producto=new ProductosEn();
     }
     
     public function index(){
         $resultado=$this->estudiante->listar();
         return $resultado;
     }
+    
+    public function ListarProductos(){
+        $resultado=$this->producto->listar();
+        return $resultado;
+    }
+    
+      public function verProducto($id){
+        $this->producto->set("id",$id);
+        $datos=$this->producto->ver();
+        return $datos;
+    }
+    
     
     public function crear($cedula,$nombre,$apellido,$telefono,$edad,$nota1,$nota2,$nota3){
         $promedio=($nota1 + $nota2 + $nota3)/3;

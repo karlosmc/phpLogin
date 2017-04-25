@@ -13,9 +13,15 @@ require_once ("modulos/Controlador.php");
 //          header('Location: index.php');
 //      }
 ?>
-
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+			<br><br>
 <h1>Inicio de todo</h1>
-<table border="1">
+
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Id</th>
@@ -36,9 +42,9 @@ require_once ("modulos/Controlador.php");
             <td><?php echo $row['apellido']; ?></td>
             <td><?php echo $row['promedio']; ?></td>
             <td>
-                <a href="?cargar=ver&id=<?php echo $row['id']; ?>"> ver </a>
+                <a href="?cargar=ver&id=<?php echo $row['id']; ?>" class="text-success"> ver </a>
                 <a href="?cargar=editar&id=<?php echo $row['id']; ?>"> editar </a>
-                <a href="?cargar=eliminar&id=<?php echo $row['id']; ?>"> eliminar </a>
+                <a href="?cargar=eliminar&id=<?php echo $row['id']; ?>>" class="text-danger"> eliminar </a>
             </td>
         
         </tr>
@@ -46,3 +52,6 @@ require_once ("modulos/Controlador.php");
         
     </tbody>
 </table>
+                </div>
+            </div>
+    </div>

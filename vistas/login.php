@@ -21,8 +21,8 @@ if(isset($_POST['login'])){
     header('Location: index_1.php');
     }
     else {
-        echo 'entro aqui';
-      //      header('Location: index.php');
+        echo 'ERROR EN USUARIO Y/O CONTRASEÑA';
+        //header('Location: index.php');
     }
     
     }
@@ -32,15 +32,18 @@ if(isset($_POST['login'])){
 <html>
     <head>
         <title> Login </title>
-        
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <div class="container">
     <body>
+        
             <form action="" method="POST">
                 <input type="text" name="usuario" placeholder="usuario" /><br><br>
                 <input type="password" name="contrasena" placeholder="contrasena" /><br><br>
-                <input type="submit" name="login" value="Aceptar" />
+                <input type="submit" name="login" value="Aceptar" class="btn-success"/>
             </form>
         
     </body>
+    </div>
     </head>
     
 </html>

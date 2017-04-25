@@ -5,9 +5,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Curso POO con carlos PHP</title>
-        
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     </head>
+    <div class="container"> 
+            <div class="col-md-12">
     <body>
+        
         
         <h1>
             Bienvenidos
@@ -24,5 +27,7 @@
             include_once('vistas/login.php');
         ?>
         </section>
+          </div>
+        </div>
     </body>
 </html>

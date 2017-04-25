@@ -54,6 +54,7 @@ class Conexion {
     
     
     public function consultasimple($sql){
+        
         mysqli_query($this->con,$sql) or die(mysqli_error($this->con));
     }
     
@@ -61,6 +62,12 @@ class Conexion {
       
         $consulta= mysqli_query($this->con,$sql) or die(mysqli_error($this->con));
         return $consulta;
+    }
+    
+    public function consultaAutoInc($sql) {
+      
+        $consulta= mysqli_query($this->con,$sql) or die(mysqli_error($this->con));
+        return mysqli_insert_id($this->con);
     }
     
     

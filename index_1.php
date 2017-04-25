@@ -31,8 +31,11 @@ include_once("modulos/sessions.php");
     <head>
         <meta charset="UTF-8">
         <title>Curso POO con carlos PHP</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         
     </head>
+    <div class="container">
+        <div class="col-md-12">
     <body>
         
         <h1>
@@ -43,6 +46,7 @@ include_once("modulos/sessions.php");
             <ul>
                 <li><a href="index_1.php"> inicio </a> </li>
                 <li><a href="?cargar=crear">registrar</a></li>
+                <li><a href="index_2.php">Comprar online</a></li>
                 <li><a href="log_out.php">Salir</a></li>
             </ul>
         </nav>
@@ -57,4 +61,6 @@ include_once("modulos/sessions.php");
         ?>
         </section>
     </body>
+        </div>
+    </div>
 </html>

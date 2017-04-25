@@ -13,7 +13,9 @@ if(isset($_POST['enviar'])){
 }
 
 ?>
-
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<div class="container">
+	<div class="col-md-12">
 <h3>registro de estudiantes</h3>
 <hr>
 <form action="" method="post">
@@ -34,7 +36,9 @@ if(isset($_POST['enviar'])){
     <br>  
     Promedio: <br>
     <input type="number" name="promedio" value="<?php echo $row[6]; ?>" disabled>
-    <input type="submit" name="enviar" value="Editar">
+    <input type="submit" name="enviar" value="Editar" class="btn-success">
 </form>
+        </div>
+</div>
 
 
